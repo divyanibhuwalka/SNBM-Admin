@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+.fixed-top {
+  z-index: 999 !important;
+}
+
+.body{
+
+  background:url(images/bg2.jpg);
+  transition: all .5s;
+  padding: 1px;
+
+
+}
+.veen{
+  width: 70%;
+  margin: 100px auto;
+  background: rgba(255,255,255,.4);
+  /*min-height: 400px;*/
+  height: 510px;
+  display:table;
+  position: relative;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+.veen > div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+}
+.veen button{
+  background: transparent;
+//background-image: linear-gradient(90deg, #ff4931, #ff4931);
+  display: inline-block;
+  padding: 10px 30px;
+  border: 3px solid #333;
+  border-radius: 50px;
+  background-clip: padding-box;
+  position: relative;
+  color: #333;
+//box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  transition: all .25s;
+}
+.veen button.dark{
+  border-color: #ff4931;
+  background: #ff4931;
+  color:#fff;
+}
+.veen .move button.dark{
+  /*border-color: #e0b722;
+  background: #e0b722;*/
+  border-color: #ff4931;
+  background: #ff4931;
+}
+.veen .splits p{
+  font-size: 18px;
+}
+.veen button:active{
+  box-shadow: none;
+}
+.veen button:focus{
+  outline: none;
+}
+.veen > .home-wrapper {
+  position: absolute;
+  width: 40%;
+  height: 120%;
+  top: -10%;
+  left: 5%;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  transition: all .5s;
+  color: #303030;
+  overflow: hidden;
+}
+.veen .home-wrapper > div{
+  padding: 15px 30px 30px;
+  width: 100%;
+  transition: all .5s;
+  background: #fff;
+  width: 100%;
+}
+.veen .home-wrapper #login{
+  padding-top: 20%;
+}
+.veen .home-wrapper #register{
+  transform: translateY(-70%) translateX(100%);
+}
+.veen .home-wrapper.move #register{
+  transform: translateY(-70%) translateX(0%);
+}
+.veen .home-wrapper.move #login{
+  transform: translateX(-100%);
+}
+.veen .home-wrapper > div> div {
+  position: relative;
+  margin-bottom: 15px;
+}
+/*.veen .home-wrapper label{
+    position: absolute;
+    top: -7px;
+    font-size: 12px;
+    white-space: nowrap;
+    background: #fff;
+    text-align: left;
+    left: 25px;
+    padding: 0 5px;
+    color: #999;
+    pointer-events: none;
+}*/
+.veen .home-wrapper h4{
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.veen .home-wrapper input{
+  height: 35px;
+  padding: 4px 15px;
+  width: 100%;
+
+}
+.veen .home-wrapper input:focus{
+  outline: none;
+
+}
+.veen > .home-wrapper.move{
+  left: 45%;
+}
+
+@media (max-width: 767px){
+  .veen > .home-wrapper.move{
+    left: 0%;
+  }
+  .veen{
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    display: block;
+  }
+  .veen > .home-wrapper{
+    position: relative;
+    height: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .veen > div{
+    display: inline-block;
+  }
+  .splits{
+    width: 50%;
+    background: #fff;
+    float: left;
+  }
+  .splits button{
+    width: 100%;
+    border-radius: 0;
+    background: #505050;
+    border: 0;
+    opacity: .7;
+    color:#fff;
+  }
+  .splits button.active{
+    opacity: 1;
+  }
+  .splits button.active{
+    opacity: 1;
+    background: #ff4931;
+    color:#fff;
+  }
+  .splits.rgstr-btn button.active{
+    background: #ff4931;
+  }
+
+  .splits p{
+    display: none;
+  }
+  .veen > .wrapper.move{
+    left: 0% !important;
+  }
+}
+
+.site-link{
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  z-index: 99999;
+  background: #303030;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  right: 30px;
+  bottom: 30px;
+  border-radius: 50%;
+}
+.site-link img{
+  width: 70px;
+  height: 70px;
+  top: 5px;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+.box-body {
+  padding: 0.50rem !important;
+}
+}
